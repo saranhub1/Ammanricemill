@@ -1,0 +1,134 @@
+.testimonials{
+  margin:80px auto;
+  padding: 0 80px;
+  position:relative;
+
+}
+.next-btn, .back-btn{
+  position:absolute;
+  top:50%;
+  right:0;
+  transform:translateY(-50%);
+  padding:15px;
+  width:50px;
+  border-radius: 50%;
+  cursor: pointer;
+  background: #88ba6c;
+}
+.back-btn{
+  right:auto;
+  left:0;
+}
+.slider{
+  overflow: hidden;
+}
+.slider ul{
+  display:flex;
+  width:200%;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+.slider ul li{
+  list-style: none;
+  width:50%;
+  padding:20px;
+}
+.slide{
+  box-shadow:0 0 20px rgba(0,0,0,0.05);
+  padding:40px;
+  border-radius: 10px;
+  color:#676767;
+  line-height: 1.4;
+}
+.slide img{
+  width:65px;
+  border-radius: 50%;
+  margin-right:10px;
+  border:4px solid #88ba6c;
+}
+.user-info{
+  display:flex;
+  align-items: center;
+  margin-bottom:20px;
+  font-size:15px;
+}
+.user-info h3{
+  color:#276203;
+}
+.testimonials form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  color:#276203;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonials form label {
+  font-weight: bold;
+}
+
+.testimonials form input,
+.testimonials form textarea {
+  width: 100%;
+  margin: 8px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+.testimonials form button {
+  width: 200px;
+  padding: 10px;
+  background-color: #88ba6c;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.testimonials form button:hover {
+  background-color: #375427;
+}
+
+.testimonials form button:focus {
+  outline: none;
+}
+
+@media(max-width:800px)
+{
+  .testimonials{
+    padding: 0 40px;
+  }
+  .next-btn,.back-btn{
+      padding:10px;
+      width: 35px;
+  }
+  .testimonials ul li{
+    padding: 10px;
+  }
+  .slide{
+    padding: 10px;
+  }
+  .slide img{
+    width:50px;
+    border:3px solid #88ba6c;
+  }
+}
+@media(max-width:600px)
+{
+   .user-info{
+    display:block;
+    margin-bottom:10px;
+    font-size:12px;
+   }
+   .user-info h3{
+     font-size:16px;
+   }
+   .slider p{
+    font-size: 12px;
+   }
+}

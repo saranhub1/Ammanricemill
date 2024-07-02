@@ -1,0 +1,37 @@
+.brands{
+   margin: 80px auto;
+   width:90%;
+   text-align:center;
+}
+.gallery
+{
+   display:flex;
+   align-items:center;
+   justify-content: space-between;
+   margin-bottom: 40px;
+}
+.gallery img{
+  width:23%;
+  border-radius: 10px;
+}
+button{
+  display:inline-flex;
+  background: #88ba6c;
+  color: white;
+  border-radius: 10px;
+  padding: 5px 4px 5px 4px;
+  margin-left: 30px;
+}
+button img{
+  margin-top: -5px;
+}
+@media(max-width:800px)
+{
+  .gallery{
+    flex-wrap:wrap;
+  }
+  .gallery img{
+     width:48%;
+     margin-bottom:25px;
+  }
+}

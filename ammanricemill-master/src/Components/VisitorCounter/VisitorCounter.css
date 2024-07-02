@@ -1,0 +1,26 @@
+/* VisitorCounter.css */
+
+.visitor-counter {
+  background-color: #88ba6c;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.count-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.count {
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 10px;
+  color: black; /* Change color as desired */
+}
+.heading
+{
+  margin-left: 40%;
+}

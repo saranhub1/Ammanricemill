@@ -1,0 +1,40 @@
+.products{
+  margin: 80px auto;
+  width:90%;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+.product img{
+  width: 100%;
+  border-radius:10px;
+  display:block;
+}
+.product h3{
+  font-size: x-large;
+  margin-top: 5%;
+  margin-left: 120px;
+  color:#88ba6c;
+
+}
+.product button{
+  margin-top:10px;
+  font-size: medium;
+  text-align: center;
+}
+.product p{
+  color:#276203;
+}
+.product{
+  flex-basis:31%;
+}
+
+@media(max-width: 650px){
+  .products{
+    flex-direction: column;
+  }
+  .product{
+    flex-basis:100%;
+    margin:20px;
+  }
+}
